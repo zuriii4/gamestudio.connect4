@@ -1,0 +1,81 @@
+.token {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../../../images/planet0.png");
+    background-blend-mode: overlay;
+    background-size: cover;
+    box-shadow: 1px 1px black;
+    margin: 2px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 576px) {
+    .token {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.token:hover {
+    box-shadow: 0 0 15px FloralWhite;
+    transition: all 0.5s;
+}
+
+
+/*.token.player1 {*/
+/*    background-image: url("../../../images/planet0.png"),radial-gradient(circle at 30% 30%, #bf7868, #8b0000);*/
+/*    animation: fadeIn 0.5s ease-in-out;*/
+
+/*}*/
+
+/*.token.player2 {*/
+/*    background-image: url("../../../images/planet0.png"),radial-gradient(circle at 70% 70%, #b6b68e, #f0c200);*/
+/*    animation: fadeIn 0.5s ease-in-out;*/
+/*}*/
+
+.token.mine {
+    background-image: url("../../../images/planet0.png") ,radial-gradient(circle at 40% 40%, #809e8c, #006400);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.token.yellow {
+        background-image: url("../../../images/planet0.png"),radial-gradient(circle at 70% 70%, #b6b68e, #f0c200);
+        animation: fadeIn 0.5s ease-in-out;
+}
+
+.token.red {
+    background-image: url("../../../images/planet0.png"),radial-gradient(circle at 30% 30%, #bf7868, #8b0000);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.token.pink {
+    background-image: url("../../../images/planet0.png"),radial-gradient(circle at 70% 70%, #c500cf, #5f0465);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.token.blue {
+    background-image: url("../../../images/planet0.png"),radial-gradient(circle at 30% 30%, #006dc8, #1b2650);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.token.dark-green {
+    background-image: url("../../../images/planet0.png"),radial-gradient(circle at 30% 30%, #145504, rgba(25, 92, 10, 0.42));
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0.5) rotate(-45deg);
+        filter: blur(10px);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1) rotate(0deg);
+        filter: blur(2px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+    }
+}

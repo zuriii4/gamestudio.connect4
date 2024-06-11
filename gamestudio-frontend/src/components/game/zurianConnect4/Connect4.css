@@ -1,0 +1,27 @@
+.new-game-button {
+    background-color: transparent;
+    border: FloralWhite;
+}
+.new-game-button:hover {
+    background-color: FloralWhite;
+    color: black;
+    border: FloralWhite;
+    box-shadow: 0 0 15px FloralWhite;
+    transition: all .5s;
+}
+.connect4_title{
+    background-image: url("../../../images/OQV53P0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 4em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.82);
+}
+
+@media (max-width: 576px) {
+    .connect4_title{
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,26 @@
+.color-circles {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .color-circle {
+    border: 2px solid #252525;
+}
+
+input[type="radio"]:disabled + .color-circle {
+    opacity: 0.3;
+    cursor: not-allowed;
+}

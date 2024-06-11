@@ -1,0 +1,38 @@
+/* Board wrapper styles */
+.board_wrapper {
+    background-color: rgba(0, 0, 0, 0.42);
+    border: 10px solid rgba(255, 255, 255, 0.79);
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.board_table {
+    border-radius: 10%;
+    max-width: 100%;
+    width: auto;
+    margin: auto;
+}
+
+.token-container.highlight {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15%;
+}
+
+
+@media (max-width: 576px) {
+    .board_table {
+        border-radius: 5%;
+        border: none;
+    }
+    .board_wrapper {
+        border: none;
+        background-color: transparent;
+    }
+    .token-container.highlight {
+        background-color: transparent;
+        border-radius: 15%;
+    }
+}

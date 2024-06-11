@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gamestudio - Connect4</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!--/*@thymesVar id="connect4Controller" type="sk.tuke.gamestudio.server.controller.Connect4Controller"*/-->
+
+<h1>Connect 4</h1>
+
+<div class="connect4Control">
+        <span class="gameInfo">
+            Current player: <span th:text="${@connect4Controller.currentPlayer}"/>
+        </span>
+
+    <span class="gameInfo">
+            Game state: <span th:text="${@connect4Controller.state}"/>
+    </span>
+
+    <a class="abutton" href="/connect4/new">New Game</a>
+</div>
+
+<div th:utext="${@connect4Controller.htmlBoard}"/>
+</body>
+</html>

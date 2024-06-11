@@ -1,0 +1,24 @@
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 40px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.star {
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: gold;
+}
+
+

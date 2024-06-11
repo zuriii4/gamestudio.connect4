@@ -1,0 +1,17 @@
+
+.comments_table {
+    border-collapse: separate;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.comments_table thead th {
+    background-color: #b6b6b6;
+    color: white;
+    text-align: center;
+}
+
+.comments_table tbody tr {
+    text-align: center;
+}

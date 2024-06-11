@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/score
+Content-Type: application/json
+
+{
+  "playerName": "betar",
+  "game": "hra",
+  "score": 100,
+  "played": "2019-03-25T12:40:33"
+}
